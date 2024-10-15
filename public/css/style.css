@@ -1,27 +1,63 @@
-/* page error*/
-.error-img{
-    position: relative;
-    width: 60%;
-    margin: auto;
-    
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"], input[type="number"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@media (max-width: 600px) {
+  form {
+      padding: 15px;
   }
-  
-  .error-img h1{
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 40%;
-    margin: 0 auto;
-    z-index: 1;
+
+  input[type="submit"] {
+      padding: 10px;
+      font-size: 16px;
   }
-  
-  .error-img img{
-    width: 100%;
-  }
-  
-  .error-img button{
-    margin: 0 auto;
-  }
+}
+
   
   /*FORM*/
   @import url(https://fonts.googleapis.com/css?family=Roboto:300);
